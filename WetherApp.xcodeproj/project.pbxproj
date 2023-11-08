@@ -14,6 +14,9 @@
 		A3AA7F6F2AFAAFE70073C50B /* WetherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AA7F6E2AFAAFE70073C50B /* WetherAppTests.swift */; };
 		A3AA7F792AFAAFE70073C50B /* WetherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AA7F782AFAAFE70073C50B /* WetherAppUITests.swift */; };
 		A3AA7F7B2AFAAFE70073C50B /* WetherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AA7F7A2AFAAFE70073C50B /* WetherAppUITestsLaunchTests.swift */; };
+		A3AA7F892AFAB2E00073C50B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AA7F882AFAB2E00073C50B /* LocationManager.swift */; };
+		A3AA7F8C2AFABBCB0073C50B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AA7F8B2AFABBCB0073C50B /* WelcomeView.swift */; };
+		A3EFDF2F2AFB4AF8004FAADE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EFDF2E2AFB4AF8004FAADE /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A3AA7F742AFAAFE70073C50B /* WetherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AA7F782AFAAFE70073C50B /* WetherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppUITests.swift; sourceTree = "<group>"; };
 		A3AA7F7A2AFAAFE70073C50B /* WetherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3AA7F882AFAB2E00073C50B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A3AA7F8B2AFABBCB0073C50B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A3EFDF2E2AFB4AF8004FAADE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 		A3AA7F5B2AFAAFE50073C50B /* WetherApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3AA7F8A2AFAB62A0073C50B /* Views */,
+				A3AA7F872AFAB28F0073C50B /* Managers */,
 				A3AA7F5C2AFAAFE50073C50B /* WetherAppApp.swift */,
-				A3AA7F5E2AFAAFE50073C50B /* ContentView.swift */,
 				A3AA7F602AFAAFE70073C50B /* Assets.xcassets */,
 				A3AA7F622AFAAFE70073C50B /* WetherApp.entitlements */,
 				A3AA7F632AFAAFE70073C50B /* Preview Content */,
@@ -127,6 +134,24 @@
 				A3AA7F7A2AFAAFE70073C50B /* WetherAppUITestsLaunchTests.swift */,
 			);
 			path = WetherAppUITests;
+			sourceTree = "<group>";
+		};
+		A3AA7F872AFAB28F0073C50B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A3AA7F882AFAB2E00073C50B /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A3AA7F8A2AFAB62A0073C50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3AA7F5E2AFAAFE50073C50B /* ContentView.swift */,
+				A3AA7F8B2AFABBCB0073C50B /* WelcomeView.swift */,
+				A3EFDF2E2AFB4AF8004FAADE /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +286,9 @@
 			files = (
 				A3AA7F5F2AFAAFE50073C50B /* ContentView.swift in Sources */,
 				A3AA7F5D2AFAAFE50073C50B /* WetherAppApp.swift in Sources */,
+				A3AA7F892AFAB2E00073C50B /* LocationManager.swift in Sources */,
+				A3EFDF2F2AFB4AF8004FAADE /* LoadingView.swift in Sources */,
+				A3AA7F8C2AFABBCB0073C50B /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +375,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,6 +429,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -429,10 +461,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.safiribytes.WetherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,10 +499,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.safiribytes.WetherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
